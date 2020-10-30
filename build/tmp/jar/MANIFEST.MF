@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: TickWarp
-Implementation-Version: 1.0
-Specification-Vendor: GammaNo0b
-Specification-Title: tickwarp
-Implementation-Timestamp: 2020-10-29T21:26:56+0100
-Specification-Version: 1
-Implementation-Vendor: GammaNo0b
-
