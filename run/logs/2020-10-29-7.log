@@ -1,0 +1,67 @@
+[29Oct2020 20:29:27.025] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200122.131323, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.1.0, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\anton\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[29Oct2020 20:29:27.032] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.0.0-milestone.4+67+b1a340b starting: java version 1.8.0_241 by Oracle Corporation
+[29Oct2020 20:29:27.115] [main/FATAL] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Failed to load a coremod library, expect problems
+java.util.ServiceConfigurationError: net.minecraftforge.forgespi.coremod.ICoreModProvider: Provider me.gamma.tickwarp.TickWarpCoreModProvider not found
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239) ~[?:1.8.0_241]
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185) ~[?:1.8.0_241]
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:372) ~[?:1.8.0_241]
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404) ~[?:1.8.0_241]
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480) ~[?:1.8.0_241]
+	at cpw.mods.modlauncher.ServiceLoaderStreamUtils.errorHandlingServiceLoader(ServiceLoaderStreamUtils.java:67) ~[modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.ServiceLoaderStreamUtils.errorHandlingServiceLoader(ServiceLoaderStreamUtils.java:60) ~[modlauncher-5.0.0-milestone.4.jar:?]
+	at net.minecraftforge.fml.loading.FMLLoader.onInitialLoad(FMLLoader.java:130) ~[forge-1.15.2-31.1.0_mapped_snapshot_20190719-1.14.3-launcher.jar:31.1]
+	at net.minecraftforge.fml.loading.FMLServiceProvider.onLoad(FMLServiceProvider.java:120) ~[forge-1.15.2-31.1.0_mapped_snapshot_20190719-1.14.3-launcher.jar:31.1]
+	at cpw.mods.modlauncher.TransformationServiceDecorator.onLoad(TransformationServiceDecorator.java:53) ~[modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.lambda$loadTransformationServices$11(TransformationServicesHandler.java:131) ~[modlauncher-5.0.0-milestone.4.jar:?]
+	at java.util.HashMap$Values.forEach(HashMap.java:981) [?:1.8.0_241]
+	at cpw.mods.modlauncher.TransformationServicesHandler.loadTransformationServices(TransformationServicesHandler.java:131) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:56) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:75) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.0.0-milestone.4.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.1.0_mapped_snapshot_20190719-1.14.3-recomp.jar:?]
+[29Oct2020 20:29:27.245] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[29Oct2020 20:29:28.096] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\anton\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[29Oct2020 20:29:29.749] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[29Oct2020 20:29:38.836] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[29Oct2020 20:29:39.427] [modloading-worker-11/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.1.0, for MC 1.15.2 with MCP 20200122.131323
+[29Oct2020 20:29:39.427] [modloading-worker-11/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.1.0 Initialized
+[29Oct2020 20:29:41.530] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[29Oct2020 20:29:42.724] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[29Oct2020 20:29:42.827] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tickwarp] Starting version check at http://myurl.me/
+[29Oct2020 20:29:43.336] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.IOException: Server returned HTTP response code: 403 for URL: http://myurl.me/
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_241]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_241]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[?:1.8.0_241]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[?:1.8.0_241]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[?:1.8.0_241]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[?:1.8.0_241]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:189) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_241]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: http://myurl.me/
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[?:1.8.0_241]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[?:1.8.0_241]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[?:1.8.0_241]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	... 3 more
+[29Oct2020 20:29:43.337] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[29Oct2020 20:29:43.857] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 31.1.0 Target: 31.2.0
+[29Oct2020 20:29:45.875] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[29Oct2020 20:29:45.875] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[29Oct2020 20:29:45.973] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[29Oct2020 20:29:46.061] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
+[29Oct2020 20:29:46.061] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[29Oct2020 20:29:46.064] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[29Oct2020 20:29:46.069] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[29Oct2020 20:29:46.070] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[29Oct2020 20:29:46.072] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[29Oct2020 20:29:46.482] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[29Oct2020 20:29:46.489] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[29Oct2020 20:29:46.491] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[29Oct2020 20:29:47.288] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
