@@ -11,7 +11,7 @@ public class ReflectionUtils {
 			if (field.getType().isAssignableFrom(type)) {
 				try {
 					field.setAccessible(true);
-					return (T) field.get(instance);
+					return type.cast(field.get(instance));
 				} catch (IllegalArgumentException | IllegalAccessException e) {
 					e.printStackTrace();
 					continue;
